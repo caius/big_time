@@ -168,7 +168,7 @@ static void display_time(struct tm *tick_time) {
   // TODO: Use `units_changed` and more intelligence to reduce
   //       redundant digit unload/load?
 
-  display_value(get_display_hour(tick_time->tm_hour), 0, false);
+  display_value(get_display_hour(tick_time->tm_hour), 0, true);
   display_value(tick_time->tm_min, 1, true);
 }
 
